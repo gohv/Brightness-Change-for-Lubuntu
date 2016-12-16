@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Lubuntu Brightness Change:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="Lubuntu Brightness Change.jar">
+      <element id="module-output" name="Lubuntu Brightness Change" />
+    </root>
+  </artifact>
+</component>
