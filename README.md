@@ -9,7 +9,7 @@ you may need to ammend the directory of your brightness settings.
 A very important thing is to set the file brightness to rw permissions, otherwise the app wont work,as the app does not
 access root privileges.
 
-At this point no exception are cought.
+At this point no exception are caught.
 App may be unstable.
 
 Dont use a setting lower than 50!
