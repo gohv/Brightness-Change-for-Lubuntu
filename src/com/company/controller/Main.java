@@ -16,17 +16,19 @@ public class Main {
         boolean continueLoop = true;
         do{
         try {
-            int brightness = scanner.nextInt();
-
+             int brightness = scanner.nextInt();
                 System.out.println("Please do not use values less than 50 or bigger than 1000");
                 System.out.print("Please enter the wanted brightness: ");
                 brightness = scanner.nextInt();
+                //A simple checker so that no one uses a very large number
+                if(brightness < 50 && brightness > 1000){
                 String setBrightness = "echo applet| sudo -S echo "+ brightness + " > /sys/class/backlight/intel_backlight/brightness";
                 continueLoop = false;
-
-
                 String[] cmd = {"/bin/bash","-c",setBrightness};
                 Process pb = Runtime.getRuntime().exec(cmd);
+                }else{
+                    System.out.println("Invalid value! Please do not use values less than 50 or bigger than 1000");
+                }
 
         } catch (InputMismatchException e) {
             System.out.println("Only Numbers please:");
