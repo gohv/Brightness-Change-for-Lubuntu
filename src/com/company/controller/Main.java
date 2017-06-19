@@ -21,7 +21,7 @@ public class Main {
                 System.out.print("Please enter the wanted brightness: ");
                 brightness = scanner.nextInt();
                 //A simple checker so that no one uses a very large number
-                if(brightness < 50 && brightness > 1000){
+                if(brightness > 50 && brightness < 1000){
                 String setBrightness = "echo applet| sudo -S echo "+ brightness + " > /sys/class/backlight/intel_backlight/brightness";
                 continueLoop = false;
                 String[] cmd = {"/bin/bash","-c",setBrightness};
